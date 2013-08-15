@@ -2,7 +2,7 @@
 
 use PHPUnit_Framework_TestCase as TestCase;
 use Mockery as Mockery;
-use Scripty\Repository\Specification as Spec;
+use Doctrinextra\Specification as Spec;
 
 class LimitTest extends TestCase
 {
@@ -23,7 +23,7 @@ class LimitTest extends TestCase
             ->with(456)
             ->once();
 
-        $child = Mockery::mock('Scripty\Repository\Specification');
+        $child = Mockery::mock('Doctrinextra\Specification');
         $child
             ->shouldReceive('modifyQuery')
             ->with($query)
@@ -37,7 +37,7 @@ class LimitTest extends TestCase
     {
         $queryBuilder = Mockery::mock('Doctrine\ORM\QueryBuilder');
 
-        $child = Mockery::mock('Scripty\Repository\Specification');
+        $child = Mockery::mock('Doctrinextra\Specification');
         $child
             ->shouldReceive('match')
             ->with($queryBuilder, 'alias')

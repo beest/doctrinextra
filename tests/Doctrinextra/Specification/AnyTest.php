@@ -2,7 +2,7 @@
 
 use PHPUnit_Framework_TestCase as TestCase;
 use Mockery as Mockery;
-use Scripty\Repository\Specification as Spec;
+use Doctrinextra\Specification as Spec;
 
 class AnyTest extends TestCase
 {

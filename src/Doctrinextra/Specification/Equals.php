@@ -1,8 +1,8 @@
 <?php
 
-namespace Scripty\Repository\Specification;
+namespace Doctrinextra\Specification;
 
-use Scripty\Repository\Specification;
+use Doctrinextra\Specification;
 use Doctrine\ORM\AbstractQuery;
 use Doctrine\ORM\QueryBuilder;
 

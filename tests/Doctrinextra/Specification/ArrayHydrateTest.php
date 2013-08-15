@@ -3,7 +3,7 @@
 use PHPUnit_Framework_TestCase as TestCase;
 use Mockery as Mockery;
 use Doctrine\ORM\AbstractQuery as Query;
-use Scripty\Repository\Specification as Spec;
+use Doctrinextra\Specification as Spec;
 
 class ArrayHydrateTest extends TestCase
 {
@@ -20,7 +20,7 @@ class ArrayHydrateTest extends TestCase
             ->with(Query::HYDRATE_ARRAY)
             ->once();
 
-        $child = Mockery::mock('Scripty\Repository\Specification');
+        $child = Mockery::mock('Doctrinextra\Specification');
         $child
             ->shouldReceive('modifyQuery')
             ->with($query)
@@ -34,7 +34,7 @@ class ArrayHydrateTest extends TestCase
     {
         $queryBuilder = Mockery::mock('Doctrine\ORM\QueryBuilder');
 
-        $child = Mockery::mock('Scripty\Repository\Specification');
+        $child = Mockery::mock('Doctrinextra\Specification');
         $child
             ->shouldReceive('match')
             ->with($queryBuilder, 'alias')

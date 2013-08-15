@@ -1,6 +1,6 @@
 <?php
 
-namespace Scripty\Repository;
+namespace Doctrinextra;
 
 use Doctrine\ORM\AbstractQuery;
 use Doctrine\ORM\QueryBuilder;
